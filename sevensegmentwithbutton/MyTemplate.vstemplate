@@ -1,0 +1,48 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>sevensegmentwithbutton</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CandCPP</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>sevensegmentwithbutton</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="GccApplicationyy.cproj" File="GccApplicationyy.cproj" ReplaceParameters="true">
+      <Folder Name="libm" TargetFolderName="libm" />
+      <ProjectItem ReplaceParameters="true" TargetFileName="ADC_driver.c">ADC_driver.c</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ADC_driver.h">ADC_driver.h</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="button.c">button.c</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="button.h">button.h</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="DIO.c">DIO.c</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="DIO.h">DIO.h</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="EEPROM.c">EEPROM.c</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="EEPROM.h">EEPROM.h</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="I2C.c">I2C.c</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="I2C.h">I2C.h</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="keypad_driver.c">keypad_driver.c</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="keypad_driver.h">keypad_driver.h</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="LCD.c">LCD.c</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="LCD.h">LCD.h</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="LCD_config.h">LCD_config.h</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="LED.c">LED.c</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="LED.h">LED.h</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="main.c">main.c</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="seven segment.c">seven segment.c</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="seven segment.h">seven segment.h</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="SPI_driver.c">SPI_driver.c</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="spi_driver.h">spi_driver.h</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="std_macros.h">std_macros.h</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="timer.c">timer.c</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="timer.h">timer.h</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="USART.c">USART.c</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="USART.h">USART.h</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

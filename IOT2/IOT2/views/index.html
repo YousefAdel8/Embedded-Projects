@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <title>JavaScript</title>
+    <style>
+        #myrange {
+            width: 80%;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <input id="myrange" type="range" min="0" max="255" value="0" />
+    </div>
+
+    <script>
+        //var HOST = "ws://localhost:3000";
+        var HOST = location.origin.replace(/^http/, 'ws');
+        var ws = new WebSocket(HOST); //#A
+        var rangeInput = document.querySelector(".myrange");
+        var rangeInput = document.getElementById("myrange");
+
+        rangeInput.oninput = function () {
+            var value = this.value;
+            ws.send(value);
+        }
+
+        ws.onmessage = function (event) {
+            var msg = event.data;
+            rangeInput.value = msg;
+        }
+
+        ws.onopen = function () {
+            console.log("Connected to server");
+        }
+
+        ws.onclose = function () {
+            console.log("Disconnected from server!");
+        }
+    </script>
+</body>
+
+</html>
+ 
